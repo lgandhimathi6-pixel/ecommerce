@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UCEN – University College of Engineering, Nagercoil</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+    body { line-height: 1.6; background: #f4f6f9; color: #333; }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #0a3d62, #1e90ff);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; }
+    header p { margin-top: 5px; font-size: 1rem; }
+
+    /* Navigation */
+    nav {
+      background: #08304b;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { background: #1e90ff; }
+
+    /* Sections */
+    section { padding: 40px 10%; background: #fff; margin-bottom: 10px; }
+    section h2 { margin-bottom: 15px; color: #0a3d62; }
+
+    /* Cards */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #f9fbfd;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+    .card h3 { margin-bottom: 10px; color: #1e90ff; }
+
+    /* Footer */
+    footer {
+      background: #08304b;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* Button */
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #1e90ff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover { background: #0a3d62; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>University College of Engineering, Nagercoil (UCEN)</h1>
+    <p>Anna University – Regional Campus</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#departments">Departments</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>Welcome to the official website of University College of Engineering, Nagercoil (UCEN). We are committed to academic excellence, innovation, and holistic development of students.</p>
+    <button class="btn" onclick="showMessage()">Know More</button>
+  </section>
+
+  <section id="about">
+    <h2>About UCEN</h2>
+    <p>UCEN is a constituent college of Anna University, offering quality engineering education with experienced faculty, modern laboratories, and a vibrant campus environment.</p>
+  </section>
+
+  <section id="departments">
+    <h2>Departments</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Computer Science & Engineering</h3>
+        <p>Focuses on software development, AI, data science, and emerging technologies.</p>
+      </div>
+      <div class="card">
+        <h3>Electronics & Communication Engineering</h3>
+        <p>Covers communication systems, VLSI, embedded systems, and signal processing.</p>
+      </div>
+      <div class="card">
+        <h3>Mechanical Engineering</h3>
+        <p>Deals with design, manufacturing, thermal engineering, and industrial applications.</p>
+      </div>
+      <div class="card">
+        <h3>Electrical & Electronics Engineering</h3>
+        <p>Specializes in power systems, control systems, and renewable energy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> University College of Engineering, Nagercoil, Tamil Nadu</p>
+    <p><strong>Email:</strong> info@ucen.edu.in</p>
+    <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 UCEN | Designed by Gandhi</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("UCEN provides quality engineering education under Anna University.");
+    }
+  </script>
+
+</body>
+</html>
